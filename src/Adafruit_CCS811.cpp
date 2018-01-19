@@ -1,5 +1,3 @@
-#include "Adafruit_CCS811.h"
-
 /**************************************************************************/
 /*! 
     @brief  Setups the I2C interface and hardware and checks for communication.
@@ -7,6 +5,8 @@
     @returns True if device is set up, false on any failure
 */
 /**************************************************************************/
+#include "Adafruit_CCS811.h"
+
 bool Adafruit_CCS811::begin(uint8_t addr)
 {
 	_i2caddr = addr;

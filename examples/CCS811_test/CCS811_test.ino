@@ -16,6 +16,10 @@
   BSD license, all text above must be included in any redistribution
  ***************************************************************************/
 
+#if defined(PARTICLE)
+ SYSTEM_THREAD(ENABLED)
+#endif
+
 #include "Adafruit_CCS811.h"
 
 Adafruit_CCS811 ccs;
