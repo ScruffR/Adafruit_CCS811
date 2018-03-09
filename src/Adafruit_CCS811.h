@@ -1,6 +1,10 @@
 #ifndef LIB_ADAFRUIT_CCS811_H
 #define LIB_ADAFRUIT_CCS811_H
 
+#if defined(PARTICLE) && (SYSTEM_VERSION < 0x00060100)
+#error "Adafruit_CCS811 library requires system target 0.6.1 or above" 
+#endif
+
 #if (ARDUINO >= 100) || defined(PARTICLE)
  #include "Arduino.h"
 #else
