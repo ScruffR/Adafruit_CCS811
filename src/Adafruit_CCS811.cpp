@@ -103,7 +103,7 @@ uint8_t Adafruit_CCS811::readData()
 		if(_status.ERROR)
 			return buf[5];
 			
-		else return 0;
+		else return false;
 	}
 }
 
